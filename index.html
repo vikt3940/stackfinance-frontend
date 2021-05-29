@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email Service</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<h1 class="h1center">Email Notification</h1>
+	<div>
+		<div id="users">
+			<h3>Select users to send email</h3>
+			<div id="userscheckbox">
+				<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+		  		<label for="vehicle1"></label><br>
+			</div>
+		</div>
+		<div id="email">
+			<h3>Enter Message</h3>
+			<input id="sbj" type="text" name="url" placeholder="Enter Subject"><br>
+			<textarea id="body" placeholder="Enter Text"></textarea><br>
+			<input type="radio" id="no" name="sch" value="no" checked="checked">
+		  	<label for="no">Send Now</label>
+		  	<input type="radio" id="yes" name="sch" value="yes">
+		  	<label for="yes">Send Later</label><br>
+			<div id="datetime" class="hide">
+			  <label for="scheduletime">Pick Date and Time:</label>
+			  <input type="datetime-local" id="scheduletime" name="scheduletime">
+			</div>
+			<button id="submit">Submit</button>
+		</div>
+	</div>
+</body>
+	<script src="index.js"></script>
+</html>
+
+
